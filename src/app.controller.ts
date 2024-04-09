@@ -10,4 +10,9 @@ export class AppController {
   async createUser(@Body() userDto: User){
     return this.appService.createUser(userDto)
   }
+
+  @Get()
+  async readUser(){
+    return this.appService.readUser()
+  }
 }
