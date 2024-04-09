@@ -21,6 +21,7 @@ export class AppService {
   async readUser(){
     return this.userModel.find({},(err,user)=>{
       if(err){console.log(err)}
-      re
-    })
+      return user
+    },{new:true})
+  }
 }
