@@ -17,4 +17,10 @@ export class AppService {
     const newUser = new this.userModel(user)
     return newUser.save()
   }
+
+  async readUser(){
+    return this.userModel.find({},(err,user)=>{
+      if(err){console.log(err)}
+      re
+    })
 }
